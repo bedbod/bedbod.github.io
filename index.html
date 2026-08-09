@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bennet de Boer Design</title>
+  <link rel="icon" type="image/png" href="assets/img/yellow.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/screen.css">
+
+  <script src="assets/js/main.js"></script>
+
+</head>
+
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <div class="header">
+        <div class="title">
+            <p>BEnnet</p>
+            <p>De BOer</p>
+            <p>Design</p>
+        </div>
+
+        <div id="filter">
+            <button class="btn all active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn editorial" onclick="filterSelection('editorial')">Editorial Projects</button>
+            <button class="btn photography" onclick="filterSelection('photography')">Photography</button>
+            <button class="btn video" onclick="filterSelection('video')">Video</button>
+            <button class="btn paintings" onclick="filterSelection('paintings')">Paintings & Drawings</button>
+            <button class="btn miscellaneous" onclick="filterSelection('miscellaneous')">Miscellaneous</button>
+        </div>
+    </div>
+
+   
+
+<div class="gallery">
+  <div class="box editorial">BMW</div>
+  <div class="box photography">Orange</div>
+  <div class="box miscellaneous">Volvo</div>
+  <div class="box editorial">Red</div>
+  <div class="box video">Ford</div>
+  <div class="box video">Blue</div>
+  <div class="box paintings">Cat</div>
+  <div class="box paintings">Dog</div>
+  <div class="box paintings">Melon</div>
+  <div class="box paintings video">Kiwi</div>
+  <div class="box video">Banana</div>
+  <div class="box video">Lemon</div>
+  <div class="box video">Cow</div>
+</div>
 
 </body>
-</html>
