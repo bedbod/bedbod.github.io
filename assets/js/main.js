@@ -23,8 +23,6 @@ function filterSelection(className) {
             }
         }
 
-var x = document.getElementByClassName("video"); 
-
 function pauseVid(x)
             {
             if (x.paused)
@@ -33,6 +31,6 @@ function pauseVid(x)
               x.pause();
             }
             $(document).ready(function () {
-            var x = document.getElementByClassName("video");
+            var x = document.getElementById("video");
             pauseVid(video);
         });
