@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Lekton";
+  src: url("../../assets/fonts/Lekton-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lekton";
+  src: url("../../assets/fonts/Lekton-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lekton";
+  src: url("../../assets/fonts/Lekton-Italic.ttf");
+  font-style: italic;
+}
