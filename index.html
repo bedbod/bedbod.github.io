@@ -18,7 +18,7 @@
 
     <div class="header">
         <div class="title">
-            <p style="font-weight: bold;">BEDBOD</p>
+            <p style="font-weight: bold; margin-bottom: -15px;">BEDBOD</p>
             <p>bennet de boer design</p>
         </div>
 
@@ -69,17 +69,26 @@
                     </div>
 
                     <div class="media">
-                        <ifram src="assets/img/piss-catalogue/piss_ansicht.pdf" title="Piss Catalogue File" width="auto"></iframe>
+                        <iframe src="assets/img/piss-catalogue/piss_ansicht.pdf" title="Piss Catalogue File" width="auto"></iframe>
                     </div>
 
                 </div>
             </div>
 
-        <button id="cinematiquebtn" class="box video">
+        <button popovertarget="cinematique" class="box video">
             <img src="assets/img/gallery/cinematique_thumbnail.jpg" alt="Cinématique des Nikolai Rollgier">
             <div class="overlay"></div>
                 <div class="overlaytext">Cinématique des Nikolai Rollgier</div>
         </button>
+            <div popover id="cinematique" popovertargetaction="show" class="popup">
+                <div class="popover-content">
+                    <button popovertarget="cinematique" popovertargetaction="hide" class="close">&times;</button>
+
+                    <div class="media">
+                        <video controls autoplay><source src="assets/img/cinematique/cinematique_video.mp4" type="video/mp4" title="Cinématique des Nikolai Rollgier"></source></video>
+                    </div>
+                </div>
+            </div>
 
         <button class="box miscellaneous">
             <img src="assets/img/gallery/the-call_thumbnail.jpg" alt="the call of your nature and the voice of god">
