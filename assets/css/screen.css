@@ -9,6 +9,7 @@ body{
     border-style: solid;
     padding: 10px;
     height: 100vh;
+    margin: 5px;
 }
 
 .title{
@@ -37,18 +38,62 @@ body{
 .gallery {
     height: 100vh;
     overflow: scroll;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    margin: 5px;
     padding: 10px;
-    border-style: dashed;
+    border-style: solid;
+    justify-content: center;
 }
 
 .box {
+    width: 45%;
     line-height: 100px;
     text-align: center;
+    position: relative;
+    height: fit-content;
+    padding: 5px;
+    border-style: solid;
 }
 
 .show {
     display: block;
+}
+
+.box img {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(109, 11, 23);
+}
+
+.box:hover .overlay{
+    opacity: 0.75;
+}
+
+.overlaytext{
+    color: white;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.box:hover .overlaytext{
+    opacity: 1;
 }
