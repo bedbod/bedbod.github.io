@@ -26,5 +26,5 @@ function filterSelection(className) {
 var x = document.getElementByClassName("video"); 
 
 function pauseVid() { 
-  x.pause("video"); 
+  HTMLMediaElement.pause(x); 
 } 
