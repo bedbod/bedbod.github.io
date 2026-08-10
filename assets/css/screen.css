@@ -133,15 +133,13 @@ body{
 }
 
 .popover-content{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 100%;
-    color: rgb(109, 11, 23)
+    color: rgb(109, 11, 23);
 }
 
 .images{
+    grid-column: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow: scroll;
     border-style: solid;
@@ -149,26 +147,33 @@ body{
     margin: 10px;
     padding: 10px;
     gap: 10px;
-    height: 100vh;
+    width: 93vw;
+    height: 66vh;
     justify-content: space-evenly;
+    object-fit: contain;
 }
 
 .images img{
-    width: 100%;
+    width: auto;
 }
 
 .info{
+    grid-column-start: 2;
     border-style: solid;
     border-color: rgb(109, 11, 23);
     margin: 10px;
     padding: 10px;
+    width: 93vw;
     height: fit-content;
 }
 
 .media{
+    grid-column-start: 2;
     border-style: solid;
     border-color: rgb(109, 11, 23);
     margin: 10px;
     padding: 10px;
-    height: fit-content;
+    width: 93vw;
+    height: 66vh;
+    object-fit: contain;
 }
