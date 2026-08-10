@@ -205,7 +205,6 @@ a{
     height: 66vh;
     object-fit: contain;
     position: absolute;
-    justify-content: center;
 }
 
 .media iframe{
@@ -218,9 +217,7 @@ a{
 }
 
 .media video{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    display: block;
+    margin: 0 auto;
     height: 100%;
 }
