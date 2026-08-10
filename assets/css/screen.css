@@ -48,15 +48,14 @@ body{
 }
 
 .box {
-    width: 45%;
+    max-height: 250px;
     aspect-ratio: 5 / 4;
     line-height: 100px;
     position: relative;
     height: fit-content;
-    padding: 5px;
+    padding: 15px;
     margin: 5px;
     justify-content: center;
-    align-content: center;
     border-style: solid;
     border-color: rgb(109, 11, 23);
     background-color: white;
@@ -116,23 +115,54 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.popver-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  width: 80%;
-}
-
 .close {
     border-style: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: rgb(109, 11, 23);
     position: absolute;
-    right: 405;
+    top: 15px;
+    right: 25px;
     font-size: 35px;
 }
 
 .close:hover{
     font-weight: bold;
     cursor: pointer;
+}
+
+.popover-content{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 100%;
+    color: rgb(109, 11, 23)
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    border-style: solid;
+    border-color: rgb(109, 11, 23);
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.images img{
+    width: 100%;
+}
+
+.info{
+    border-style: solid;
+    border-color: rgb(109, 11, 23);
+    margin: 10px;
+    padding: 10px;
+    height: fit-content
+}
+
+.media{
+
 }
