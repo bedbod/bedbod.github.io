@@ -55,7 +55,7 @@ body{
     border-width: 1.5px;
     margin: 5px;
     padding: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100vh
 }
 
