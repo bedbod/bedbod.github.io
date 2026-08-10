@@ -44,7 +44,7 @@ body{
     border-color: rgb(109, 11, 23);
     margin: 5px;
     padding: 10px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .box {
@@ -58,6 +58,8 @@ body{
     justify-content: center;
     align-content: center;
     border-style: solid;
+    border-color: rgb(109, 11, 23);
+    background-color: white;
 }
 
 .show {
@@ -100,4 +102,37 @@ body{
 
 .box:hover .overlaytext{
     opacity: 1;
+}
+
+.popup{
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    overscroll-behavior: contain;
+    background-color: rgb(255, 255, 255);
+}
+
+.popver-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+    border-style: none;
+    background-color: white;
+    color: rgb(109, 11, 23);
+    position: absolute;
+    right: 405;
+    font-size: 35px;
+}
+
+.close:hover{
+    font-weight: bold;
+    cursor: pointer;
 }

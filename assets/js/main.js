@@ -23,3 +23,9 @@ function filterSelection(className) {
             }
         }
 
+const close = document.getElementByClassName("close");
+const popup = document.getElementByClassName("popup");
+
+  close.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
