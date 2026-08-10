@@ -16,7 +16,7 @@ body{
 }
 
 .title{
-    font-size: 15pt;
+    font-size: 17pt;
     height: auto;
     line-height: 100%;
     margin: 5px;
@@ -33,6 +33,7 @@ body{
     text-align: left;
     font-family: Lekton;
     text-transform: uppercase;
+    font-size: 15px;
     cursor: pointer;
 }
 
