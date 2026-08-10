@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Lekton";
-  src: url("../../assets/fonts/Lekton-Regular.otf");
+  src: url("../../assets/fonts/Lekton-Regular.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Lekton";
-  src: url("../../assets/fonts/Lekton-Bold.otf");
+  src: url("../../assets/fonts/Lekton-Bold.ttf");
   font-weight: bold;
 }
 
