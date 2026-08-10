@@ -29,3 +29,9 @@ const popup = document.getElementByClassName("popup");
   close.addEventListener("click", () => {
     popup.style.display = "none";
   });
+
+var x = document.getElementByClassName("video"); 
+
+function pauseVid() { 
+  x.pause(); 
+} 
