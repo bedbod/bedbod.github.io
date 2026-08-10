@@ -207,7 +207,7 @@ a{
     width: 93vw;
     height: 66vh;
     object-fit: contain;
-    overscroll-behavior: contain;
+    overscroll-behavior: none;
 }
 
 .media iframe{
