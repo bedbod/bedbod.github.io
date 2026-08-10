@@ -25,6 +25,14 @@ function filterSelection(className) {
 
 var x = document.getElementByClassName("video"); 
 
-function pauseVid() { 
-  HTMLMediaElement.pause(x); 
-} 
+function pauseVid(x)
+            {
+            if (x.paused)
+              x.play();
+            else
+              x.pause();
+            }
+            $(document).ready(function () {
+            var x = document.getElementByClassName("video");
+            pauseVid(video);
+        });
