@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="media">
-                        <iframe src="assets/img/piss-catalogue/piss_ansicht.pdf" title="Piss Catalogue File" width="auto"></iframe>
+                        <ifram src="assets/img/piss-catalogue/piss_ansicht.pdf" title="Piss Catalogue File" width="auto"></iframe>
                     </div>
 
                 </div>
@@ -182,17 +182,34 @@
                     </div>
 
                     <div class="media">
-                        <iframe src="assets/img/101/101_ansicht.pdf" title="#101 File" width="auto"></iframe>
+                        <ifram src="assets/img/101/101_ansicht.pdf" title="#101 File" width="auto"></iframe>
                     </div>
 
                 </div>
             </div>
 
-        <button class="box video">
+        <button popovertarget="voyeur" class="box video">
             <img src="assets/img/gallery/voyeur_thumbnail.jpg" alt="VOYEUR">
             <div class="overlay"></div>
-        <div class="overlaytext">VOYEUR</div>
+                <div class="overlaytext">VOYEUR</div>
         </button>
+            <div popover id="voyeur" popovertargetaction="show" class="popup">
+                <div class="popover-content">
+                    <button popovertarget="voyeur" popovertargetaction="hide" class="close" onclick="pauseVid()">&times;</button>
+
+                    <div class="media">
+                        <video controls id="video"><source src="assets/img/voyeur/voyeur_video.mp4" type="video/mp4" title="VOYEUR"></source></video>
+                    </div>
+
+                    <div class="info">
+                        <h1>VOYEUR</h1>
+                        <p>claymation</p>
+                    </div>
+
+                </div>
+            </div>
+
+
     </div>
 
     
