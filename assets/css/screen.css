@@ -54,6 +54,11 @@ body{
     display: block;
 }
 
+.nav img {
+    width: 100%;
+    max-width: 200px;
+}
+
 .gallery {
     display: flex;
     flex-direction: row;
