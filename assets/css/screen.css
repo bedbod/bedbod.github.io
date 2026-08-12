@@ -60,7 +60,7 @@ body{
 }
 
 .box {
-    max-height: 300px;
+    max-height: 250px;
     aspect-ratio: 5 / 4;
     line-height: 100px;
     position: relative;
