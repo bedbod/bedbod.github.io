@@ -46,8 +46,8 @@ body{
 }
 
 .nav {
-    color: black;
     display: none;
+    margin: 5px;
 }
 
 .nav.active {
