@@ -13,6 +13,7 @@ body{
     padding: 10px;
     height: 100vh;
     margin: 5px;
+    overflow-y: scroll;
 }
 
 .title{
@@ -50,6 +51,7 @@ body{
     margin: 5px;
     width: 90%;
     font-size: 14px;
+    height:fit-content;
     overflow: scroll;
 }
 
