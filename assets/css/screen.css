@@ -1,10 +1,18 @@
+:root {
+  --main-color:  #70091e;
+  --background-color: #ffffff;
+  --accent-color: #ecff18;
+  --link-color: #514700;
+}
+
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 100%;
-    color: rgb(109, 11, 23);
+    color: var(--main-color);
     font-family: Lekton;
     border-width: 1.5px;
+    background-color: var(--background-color);
 }
 
 .header{
@@ -14,6 +22,7 @@ body{
     height: 100vh;
     margin: 5px;
     overflow-y: scroll;
+    background-color: var(--background-color);
 }
 
 .title{
@@ -29,8 +38,8 @@ body{
     border: none;
     width: 100%;
     margin-bottom: 5px;
-    background-color: white;
-    color: rgb(109, 11, 23);
+    background-color: var(--background-color);
+    color: var(--main-color);
     text-align: left;
     font-family: Lekton;
     text-transform: uppercase;
@@ -39,7 +48,7 @@ body{
 }
 
 .gallerybtn:hover, .navbtn:hover{
-    background-color:rgb(255, 251, 0);
+    background-color: var(--accent-color);
 }
 
 .gallerybtn.active, .navbtn.active {
@@ -70,8 +79,9 @@ body{
     flex-wrap: wrap;
     overflow: scroll;
     border-style: solid;
-    border-color: rgb(109, 11, 23);
+    border-color: var(--main-color);
     border-width: 1.5px;
+    background-color: var(--background-color);
     margin: 5px;
     padding: 10px;
     justify-content: center;
@@ -87,9 +97,9 @@ body{
     margin: 5px;
     justify-content: center;
     border-style: solid;
-    border-color: rgb(109, 11, 23);
+    border-color: var(--main-color);
     border-width: 1.5px;
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .show {
@@ -111,7 +121,7 @@ body{
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: white;
+    background-color: var(--accent-color);
 }
 
 .box:hover .overlay{
@@ -121,7 +131,7 @@ body{
 
 .overlaytext{
     font-family: Lekton;
-    color: rgb(109, 11, 23);
+    color: var(--main-color);
     opacity: 0;
     font-size: 23px;
     line-height: 27px;
@@ -147,17 +157,17 @@ body{
     height: 100%;
     overflow: auto; 
     overscroll-behavior: contain;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
     border-style: solid;
-    border-color: white;
+    border-color: var(--background-color);
 }
 
 .close {
     border-style: solid;
-    border-color: rgb(109, 11, 23);
+    border-color: var(--main-color);
     border-width: 1.5px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(109, 11, 23);
+    background-color: var(--background-color);
+    color: var(--main-color);
     position: absolute;
     top: 14px;
     right: 25px;
@@ -170,10 +180,11 @@ body{
 .close:hover{
     font-weight: bold;
     cursor: pointer;
+    background-color: var(--accent-color);
 }
 
 .popover-content{
-    color: rgb(109, 11, 23);
+    color: var(--main-color);
     justify-content: center;
 }
 
@@ -183,7 +194,7 @@ body{
     flex-wrap: nowrap;
     overflow: scroll;
     border-style: solid;
-    border-color: rgb(109, 11, 23);
+    border-color: var(--main-color);
     border-width: 1.5px;
     margin: 10px;
     padding: 10px;
@@ -199,7 +210,7 @@ body{
 
 .info{
     border-style: solid;
-    border-color: rgb(109, 11, 23);
+    border-color: var(--main-color);
     border-width: 1.5px;
     margin: 10px;
     margin-bottom: 0px;
@@ -231,13 +242,13 @@ body{
 }
 
 a{
-    color:rgb(90, 113, 15)
+    color:var(--link-color)
 }
 
 .media{
     grid-column-start: 2;
     border-style: solid;
-    border-color: rgb(109, 11, 23);
+    border-color: var(--main-color);
     border-width: 1.5px;
     margin: 10px;
     padding: 10px;
