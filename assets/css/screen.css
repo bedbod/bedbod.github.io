@@ -12,7 +12,7 @@ body{
     color: var(--main-color);
     font-family: Lekton;
     border-width: 1.5px;
-    background-color: var(--background-color);
+    background-color: var(--accent-color);
 }
 
 .header{
@@ -176,6 +176,7 @@ body{
     top: 7px;
     left: 7px;
     font-size: 50px;
+    font-style: bold;
     padding-top: -30px;
     z-index: 1;
     width: 60px;
@@ -183,7 +184,6 @@ body{
 }
 
 .close:hover{
-    font-weight: bold;
     cursor: pointer;
     background-color: var(--background-color);
 }
