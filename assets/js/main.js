@@ -49,10 +49,10 @@ function ShowNav(className) {
             }
         }
 
-var x = document.getElementById("video");
+document.getElementsByClassName("close").addEventListener("onclick", pauseVid);
+
+var x = document.getElementByClassName("video");
 
 function pauseVid() {
     x.pause();
 };
-
-document.getElementsByClassName("close").addEventListener("onclick", pauseVid);
