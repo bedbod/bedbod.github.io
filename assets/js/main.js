@@ -51,8 +51,7 @@ function ShowNav(className) {
 
 document.getElementsByClassName("close").addEventListener("onclick", pauseVid);
 
-var x = document.getElementByClassName("video");
-
 function pauseVid() {
+    var x = document.getElementByClassName("video");
     x.pause();
 };
