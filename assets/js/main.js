@@ -51,8 +51,10 @@ function ShowNav(className) {
 
 
 function pauseVid() { 
-var videoList = document.getElementsByTagName("video");
-for (var i = 0; i < videoList.length; i++) {
-    videoList[i].pause();
-}
+var videos = document.getElementsByClassName("vids");
+            for (var i = 0; i < videos.length; i++) {
+                var video = videos[i];
+            videos.forEach(function(video){
+            video.pause();
+            })}; 
 } 
