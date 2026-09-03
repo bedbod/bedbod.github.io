@@ -48,11 +48,3 @@ function ShowNav(className) {
                 }
             }
         }
-
-
-function pauseVid() { 
-         var videos = document.querySelectorAll("vids");
-            videos.forEach(function(video){
-            video.pause();
-            }); 
-        } 
