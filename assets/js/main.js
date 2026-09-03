@@ -54,7 +54,5 @@ function pauseVid(video) {
 var videos = document.getElementsByClassName("vids");
             for (var i = 0; i < videos.length; i++) {
                 var video = videos[i];
-            videos.forEach(function(video){
-            video.pause();
-            })}; 
+            videos.forEach(video => video.pause())}; 
 } 
