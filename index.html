@@ -1026,10 +1026,11 @@
     </div>
 
     <script>
-        function pauseVid() { 
-        var elements = document.getElementsByClassName("vids");
-        for(var i  = 0; i< elements.length; i++) {
-        elements[i].pause();
-        }}  
+
+        const videos = document.querySelectorAll("vids");;
+
+        function pauseVid() {  
+          videos.forEach(video => video.pause()); 
+        } 
     </script>
 </body>
