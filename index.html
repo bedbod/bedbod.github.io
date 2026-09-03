@@ -1026,8 +1026,12 @@
     </div>
 
     <script>
+        const x = document.querySelectorAll("vids"); 
+
         function pauseVid() {  
-          document.querySelectorAll("vids").forEach(video => video.pause());
+        x.forEach(x => {
+        x.pause();
+        }); 
         } 
     </script>
 </body>
