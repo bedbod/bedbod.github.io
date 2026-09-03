@@ -138,7 +138,7 @@
                     <button popovertarget="cinematique" popovertargetaction="hide" class="close" onclick="pauseVid()">&times;</button>
 
                     <div class="media">
-                        <video controls class="vids"><source src="assets/img/cinematique/cinematique_video.mp4" type="video/mp4" title="Cinématique des Nikolai Rollgier"></source></video>
+                        <video controls id="vids"><source src="assets/img/cinematique/cinematique_video.mp4" type="video/mp4" title="Cinématique des Nikolai Rollgier"></source></video>
                     </div>
 
                     <div class="info">
@@ -325,7 +325,7 @@
 
                     <div class="images" style="height: 100vh">
                         <img src="assets/img/101/101_plakat.jpg" alt="#101 Plakat">
-                        <video controls class="vids"><source src="assets/img/101/101_video.mp4" type="video/mp4" title="#101 slideshow"></source></video>
+                        <video controls id="vids"><source src="assets/img/101/101_video.mp4" type="video/mp4" title="#101 slideshow"></source></video>
                     </div>
 
                     <div class="media">
@@ -345,7 +345,7 @@
                     <button popovertarget="voyeur" popovertargetaction="hide" class="close" onclick="pauseVid()">&times;</button>
 
                     <div class="media">
-                        <video controls class="vids"><source src="assets/img/voyeur/voyeur_video.mp4" type="video/mp4" title="VOYEUR"></source></video>
+                        <video controls id="vids"><source src="assets/img/voyeur/voyeur_video.mp4" type="video/mp4" title="VOYEUR"></source></video>
                     </div>
 
                     <div class="info">
@@ -545,7 +545,7 @@
                     <button popovertarget="silber" popovertargetaction="hide" class="close" onclick="pauseVid()">&times;</button>
 
                     <div class="media">
-                        <video controls class="vids"><source src="assets/img/silber/silber_video.mp4" type="video/mp4" title="Silber"></source></video>
+                        <video controls id="vids"><source src="assets/img/silber/silber_video.mp4" type="video/mp4" title="Silber"></source></video>
                     </div>
 
                     <div class="info">
@@ -606,7 +606,7 @@
 
                     <div class="images">
                         <img src="assets/img/display/display_plakat.jpg" alt="[Dis]Play the System Plakat">
-                        <video controls class="vids"><source src="assets/img/display/display_video.mp4" type="video/mp4" title="[Dis]Play the System video"></source></video>
+                        <video controls id="vids"><source src="assets/img/display/display_video.mp4" type="video/mp4" title="[Dis]Play the System video"></source></video>
                     </div>
 
                      <div class="info">
@@ -637,7 +637,7 @@
                     </div>
 
                     <div class="images">
-                        <video controls class="vids"><source src="assets/img/display/display_walkthrough.mp4" type="video/mp4" title="[Dis]Play the System Walkthrough"></source></video>
+                        <video controls id="vids"><source src="assets/img/display/display_walkthrough.mp4" type="video/mp4" title="[Dis]Play the System Walkthrough"></source></video>
                         <img src="assets/img/display/display_1.jpg" alt="[Dis]Play the System 1">
                         <img src="assets/img/display/display_2.jpg" alt="[Dis]Play the System 2">
                         <img src="assets/img/display/display_3.jpg" alt="[Dis]Play the System 3">
@@ -661,7 +661,7 @@
                     </div>
 
                     <div class="images" style="height: 33vh;">
-                        <video controls class="vids"><source src="assets/img/display/display-process_video.mp4" type="video/mp4" title="[Dis]Play the System Process"></source></video>
+                        <video controls id="vids"><source src="assets/img/display/display-process_video.mp4" type="video/mp4" title="[Dis]Play the System Process"></source></video>
                         <img src="assets/img/display/display-process_1.jpeg" alt="[Dis]Play the System Process 1">
                         <img src="assets/img/display/display-process_2.jpeg" alt="[Dis]Play the System Process 2">
                         <img src="assets/img/display/display-process_3.jpeg" alt="[Dis]Play the System Process 3">
@@ -737,7 +737,7 @@
                     <button popovertarget="volto" popovertargetaction="hide" class="close" onclick="pauseVid()">&times;</button>
 
                     <div class="media">
-                        <video controls class="vids"><source src="assets/img/volto/volto_video.mp4" type="video/mp4" title="VOLTO"></source></video>
+                        <video controls id="vids"><source src="assets/img/volto/volto_video.mp4" type="video/mp4" title="VOLTO"></source></video>
                     </div>
 
                     <div class="info">
@@ -907,7 +907,7 @@
                     <div class="images">
                         <img src="assets/img/vividwhale/vividwhale_1.jpg" alt="VIVIDWHALE 1">
                         <img src="assets/img/vividwhale/vividwhale_2.jpg" alt="VIVIDWHALE 2">
-                        <video controls class="vids"><source src="assets/img/vividwhale/vividwhale_video.mp4" type="video/mp4" title="VIVIDWHALE"></source></video>
+                        <video controls id="vids"><source src="assets/img/vividwhale/vividwhale_video.mp4" type="video/mp4" title="VIVIDWHALE"></source></video>
                         <img src="assets/img/vividwhale/vividwhale_3.jpg" alt="VIVIDWHALE 3">
                         <img src="assets/img/vividwhale/vividwhale_4.jpg" alt="VIVIDWHALE 4">
                     </div>
@@ -1026,8 +1026,12 @@
     </div>
 
     <script>
+        const x = document.querySelectorAll("vids"); 
+
         function pauseVid() { 
-        document.querySelectorAll("vids").forEach(video => video.pause());
+          x.forEach(x => {
+        x.pause();
+        }); 
         } 
     </script>
 </body>
