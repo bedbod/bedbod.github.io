@@ -48,10 +48,3 @@ function ShowNav(className) {
                 }
             }
         }
-
-document.getElementsByClassName("close").addEventListener("onclick", pauseVid);
-
-function pauseVid() {
-    var x = document.getElementByClassName("video");
-    x.pause();
-};
