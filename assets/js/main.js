@@ -50,9 +50,9 @@ function ShowNav(className) {
         }
 
 
-function pauseVid(video) { 
-var videos = document.getElementsByClassName("vids");
-            for (var i = 0; i < videos.length; i++) {
-                var video = videos[i];
-            videos.forEach(video => video.pause())}; 
+function pauseVid() { 
+var videoList = document.getElementsByTagName("video");
+for (var i = 0; i < videoList.length; i++) {
+    videoList[i].pause();
+}
 } 
