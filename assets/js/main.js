@@ -48,3 +48,13 @@ function ShowNav(className) {
                 }
             }
         }
+
+
+function pauseVid() { 
+var videos = document.getElementsByClassName("vids");
+            for (var i = 0; i < divs.length; i++) {
+                var div = divs[i];
+            videos.forEach(function(video){
+            video.pause();
+            })}; 
+} 
