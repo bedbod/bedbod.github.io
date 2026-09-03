@@ -1027,11 +1027,10 @@
 
     <script>
         function pauseVid() { 
-        const allVideos = document.querySelectorAll("vids");
-
-        allVideos.forEach(video => {
-        video.pause();
-        });
-        } 
+         var videos = document.querySelectorAll("vids");
+            videos.forEach(function(video){
+            video.pause();
+            }); 
+        }  
     </script>
 </body>
